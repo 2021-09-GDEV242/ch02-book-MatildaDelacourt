@@ -28,4 +28,13 @@ class Book
         return title;
         
     }
+    //prints author
+    public void printAuthor(){
+        System.out.println("The Authors Name is author" + author);
+    }
+    // prints book title
+    public void printBookTitle(){
+        System.out.println("The Books Name is Melted Cranberries" + title);
+    }
+
 }
