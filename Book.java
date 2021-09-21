@@ -11,6 +11,7 @@ class Book
     private String title = ("Melted Cranberries");
     private int pages = 200;
     private String refNumber;
+    private int borrowed;
 
     /**
      * Set the author and title fields when this object
@@ -59,11 +60,22 @@ class Book
     {
         return refNumber;
     }
+    // increases value of borrow field by one
+    public void borrow()
+    { 
+        borrowed += 1;
+    }
+    // returns value of borrow field
+    public int getBorrowed()
+    {
+        return borrowed;
+    }
         // print the details and refnumber if present
     public void printDetails(){
         System.out.println("Title: " + title);
         System.out.println("Author: " + author);
         System.out.println("Pages: " + pages);
+        System.out.println("Borrowed: " + borrowed + "x");
 
         if (refNumber.length() > 0){
             System.out.println("Refnumber + " + refNumber);
