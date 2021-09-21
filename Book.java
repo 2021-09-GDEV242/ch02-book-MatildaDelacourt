@@ -42,6 +42,12 @@ class Book
     public int getPages(){
         return pages;
     }
-    
+        // print the details 
+    public void printDetails(){
+        System.out.println("Title: " + title);
+        System.out.println("Author: " + author);
+        System.out.println("Pages: " + pages);
+    }
+                
 
 }
