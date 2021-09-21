@@ -54,11 +54,17 @@ class Book
     {
         return refNumber;
     }
-        // print the details 
+        // print the details and refnumber if present
     public void printDetails(){
         System.out.println("Title: " + title);
         System.out.println("Author: " + author);
         System.out.println("Pages: " + pages);
+        
+        if(refNumber.length() > 0){
+            System.out.println("Refnumber + " + refNumber);
+        }
+        else{
+            System.out.println("Refnumber = ZZZ");
     }
                 
 
