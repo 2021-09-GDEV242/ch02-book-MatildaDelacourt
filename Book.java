@@ -7,9 +7,10 @@
 class Book
 {
     // The fields.
-    private String author;
-    private String title;
-    private int pages;
+    private String author = ("Matilda Delacourt");
+    private String title = ("Melted Cranberries");
+    private int pages = 200;
+    private String refNumber;
 
     /**
      * Set the author and title fields when this object
@@ -20,6 +21,7 @@ class Book
         author = bookAuthor;
         title = bookTitle;
         pages = bookPages;
+        refNumber = "";
     }
     //returns the author of this book
     public String getAuthor(){
@@ -41,6 +43,16 @@ class Book
     //returns the pages of this book
     public int getPages(){
         return pages;
+    }
+    //sets the ref number
+    public void setRefNumber(String ref)
+    {
+        refNumber= ref;
+    }
+    // returns the ref number
+    public String getRefNumber()
+    {
+        return refNumber;
     }
         // print the details 
     public void printDetails(){
