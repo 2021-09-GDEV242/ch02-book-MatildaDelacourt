@@ -9,6 +9,7 @@ class Book
     // The fields.
     private String author;
     private String title;
+    private int pages;
 
     /**
      * Set the author and title fields when this object
@@ -30,11 +31,11 @@ class Book
     }
     //prints author
     public void printAuthor(){
-        System.out.println("The Authors Name is author" + author);
+        System.out.println("The Authors Name is " + author);
     }
     // prints book title
     public void printBookTitle(){
-        System.out.println("The Books Name is Melted Cranberries" + title);
+        System.out.println("The Books Name is " + title);
     }
 
 }
